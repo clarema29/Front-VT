@@ -1,0 +1,78 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+} 
+
+.header-bg {
+    padding-top: 56px; /* Altura de la barra de navegación */
+}
+
+.flex-grow-1 {
+    flex: 1;
+}
+
+footer.py-5 {
+    background: rgb(4, 45, 49);
+}
+
+
+.navbar {
+    background: rgb(4, 45, 49);
+}
+
+.navbar-brand {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 56px;
+} 
+
+.logoText::after {
+    content: ""; /* Agrega contenido pseudo-elemento */
+    width: 150px; /* Ancho del logo */
+    height: 150px; /* Alto del logo */
+    background-image: url('/img/LogoVt.png'); /* Ruta de la imagen del logo */
+    background-size: contain; /* Ajusta el tamaño de la imagen para contener el espacio disponible */
+    background-repeat: no-repeat; /* Evita que la imagen del logo se repita */
+    position: absolute; /* Establece la posición absoluta */
+    top: 50%;
+    left: -100px;
+    transform: translateY(-45%);
+}
+
+.btn-outline-success {
+    color: aliceblue;
+    border-color: aliceblue;
+}
+
+.btn-outline-success:hover {
+    background-color: rgb(14, 118, 108);
+    border-color: darkgrey;
+}
+
+.form-inline {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+} 
+
+.space {
+    margin-top: 9rem;
+}
+
+.btn-crear {
+    background-color: rgb(8, 82, 71);
+    color: aliceblue;
+}
+
+
+
+
+
+

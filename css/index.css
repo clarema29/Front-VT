@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}  
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100vw; /* Ancho del body igual al ancho de la ventana del navegador */
+    height: 100Vh;
+    overflow-x: hidden;
+}
+
+/*Estilo header*/
+.header-bg {
+    height:8vw;
+    background: url(/img/banner.jpg);
+    background-size: cover;
+    border-bottom: rgb(4, 45, 49) solid 10px;
+}
+
+.navbar {
+    background-image: url('/img/LogoVt.png'); 
+    background-repeat: no-repeat;
+    background-size: 150px; 
+    background-position: 5px; /* Ajusta la posición del logo */
+    padding:30px; 
+}
+
+.nav-link {
+    color: rgb(7, 66, 72);
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(45, 135, 145); 
+    border-bottom: 3px solid hsl(190, 55%, 34%);
+}
+
+.form-control {
+    width: 20rem;
+    border-radius: 2rem;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: rgb(7, 66, 72) ;
+    color: aliceblue;
+    border-radius: 2rem;
+    margin-bottom: 10px;
+}
+
+.icono {
+    padding: 5px;
+    font-size: 20px;
+}
+.car {
+    margin-right: 20px;
+}
+
+/* Main: Sección servicios*/
+.servicio {
+    margin: 3rem 12rem;
+    font-size: 20px;
+}
+
+.text-p:hover {
+    color: rgb(45, 135, 145); 
+    
+}
+
+.boton {
+    padding: 10px;
+    margin: 10px;
+    border: 2px rgba(3, 81, 91, 0.645)solid;
+    border-radius: 5px;
+    background: white;
+}
+
+.text-p {
+    font-size: 10px;
+    text-align: right;
+    font-weight: bold;
+    color: rgba(30, 86, 91, 0.623);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/*Main: sección productos*/
+.galeria-usuario a{
+    text-decoration: none;
+    color: #faf5f5;
+    font-size: 18px;
+}
+
+.container {
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    position: relative;
+}
+
+.product.oferta::before {
+    content: "OFERTA"; 
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff0000; 
+    color: #fff; 
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.product img {
+    max-width:80%;
+    height: auto;
+}
+
+.product h2 {
+    font-size: 14px;
+    width: 100%;
+}
+
+.product ul {
+    font-size: 10px;
+    list-style-type: none;
+    text-align: initial;
+}
+
+.price {
+    font-weight: bold;
+    color: #333;
+    font-weight: 500;
+}
+
+.precioAntiguo {
+    text-decoration: line-through;
+    color: #ff0000;
+}
+
+.container button {
+    background-color: #023737e6;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.container button:hover {
+    background-color:  rgba(12, 52, 59, 0.623);
+}
+
+/* Footer */
+footer, .contacto {
+    display: flex;
+    background: rgb(4, 45, 49);
+    padding: 20px 10px;
+    color: aliceblue;
+    justify-content: space-around;
+    align-content: center;
+    text-decoration: none;
+    position: relative;
+    margin-bottom: 70px;
+    font-size: large;
+}
+
+.logoText {
+    position: relative; 
+    margin-top: 20px;
+}
+
+.logoText::after {
+    content: ""; /* Agrega contenido pseudo-elemento */
+    display: block; /* Muestra como un bloque */
+    width: 150px; /* Ancho del logo */
+    height: 150px; /* Alto del logo */
+    background-image: url('/img/LogoVt.png'); /* Ruta de la imagen del logo */
+    background-size: contain; /* Ajusta el tamaño de la imagen para contener el espacio disponible */
+    background-repeat: no-repeat; /* Evita que la imagen del logo se repita */
+    position: absolute; /* Establece la posición absoluta */
+    top: 10%; /* Ajusta la distancia desde arriba */
+    left: 50%; /* Alinea a la izquierda */
+    transform: translateX(-50%);
+}
+
+.fa-brands {
+    margin-right: 20px;
+}
+
+.copy {
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    text-align: center; 
+    font-size: small;
+}

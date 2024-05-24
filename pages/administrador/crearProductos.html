@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VT-Crear</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- vinculación css -->
+  <link rel="stylesheet" href="/css/listaProductos.css">
+  <link rel="stylesheet" href="/css/crearProducto.css">
+
+    <!-- vinculación font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="hidden">
+    <header class="header-bg" >
+        <!-- barra de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+          <div class="container ">
+            <a class="navbar-brand" href="#"> 
+              <span class="logoText"></span></a>
+      
+            <form class="form-inline my-2 my-lg-0" method="post"
+            action="#">
+            <input class="form-control mr-sm-2" type="search"
+            placeholder="Buscar" aria-label="Search" name="nombre"
+            autocomplete="off">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+      
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown"><a
+                class="nav-link dropdown-toggle" href="#"
+                id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false"> ADMIN </a>
+                <div class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="/pages/administrador/listaProuctos.html">Productos</a> <a
+                class="dropdown-item" href="#">Clientes</a> <a
+                class="dropdown-item" href="/index.html">Salir</a> 
+              </div></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Formulario crear productos -->
+    <div class="main-content">
+    <main class="form-create">
+      
+        <form class="form-horizontal" id="registroProducto">
+            <h2 id="titulo-form">Crear Producto</h2>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="nombre">Nombre:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control custom-input" id="nombre" name="nombre"
+                placeholder="Ingrese el nombre del producto" autocomplete="off" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="descripcion">Descripción:</label>
+                <div class="col-sm-10">
+                  <textarea class="form-control custom-input" id="descripcion" name="descripcion"
+                            placeholder="Ingrese la descripcion del producto" required
+                            autocomplete="off"> </textarea>
+                </div>
+              </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="cantidad">Cantidad:</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control custom-input" id="cantidad"
+                      name="cantidad" placeholder="Ingrese la cantidad del producto"
+                      required autocomplete="off">
+              </div>
+            </div>
+        
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="precio">Precio:</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control custom-input" step="any" id="precio" name="precio"
+                placeholder="Ingrese el precio del producto" autocomplete="off" required>
+              </div>
+            </div>
+        
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="categoriaEnum">Categoria:</label>
+              <div class="col-sm-10">
+                <select class="form-control custom-input" id="categoriaEnum" name="categoriaEnum" required>
+                  <option value="" selected disabled>Seleccione una categoría</option>
+                  <option value="COMPUTADORES">COMPUTADORES</option>
+                  <option value="IMPRESORAS">IMPRESORAS</option>
+                  <option value="TABLET">TABLET</option>
+                  <option value="AUDIO_VIDEO">AUDIO/VIDEO</option>
+                  <option value="ACCESORIOS">ACCESORIOS</option>
+                  <option value="GAMER">GAMER</option>
+              </select>
+              </div>
+            </div>
+        
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="imagen">Imagen:</label>
+              <div class="col-sm-10">
+                <img class="imagen-placeholder" src="/img/img_placeholder/place-holder.jpg" alt="seleccionar imagen"
+                  id="imagen">
+              </div>
+              <button type="button" id="btnSeleccionarImagen" class="btn">Subir imagen</button>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="enOferta">En oferta:</label>
+              <div class="col-sm-10">
+                <input type="checkbox" id="enOferta" name="enOferta">
+              </div>
+            </div>
+        
+            <div class="row">
+              <div class="col-sm-2">
+                <button type="submit" class="btn btn-create btn-success" id="crear-producto">
+                  <span class="glyphicon glyphicon-saved"></span> Crear
+                </button>
+              </div>
+            </div>
+        
+          </form>
+        
+  </main>
+  </div>
+  
+  <!-- Footer -->
+<footer class="py-5 ">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy; 2024 Aprendices SENA-Visión tecnológica</p>
+  </div>
+  <!-- /.container -->
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- vinculación js -->   
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>  
+  <script src="/js/editarProducto.js"></script>
+  <script src="/js/crearProducto.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- <script src='https://cdn.jsdelivr.net/jquery.cloudinary/1.0.18/jquery.cloudinary.js' type='text/javascript'></script> -->
+  <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+  <script src="/js/img/servicio_imagen.js"></script>
+
+</body>
+
+</html>

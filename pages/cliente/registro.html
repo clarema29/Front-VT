@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- vinculación css -->
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/registro.css" />
+    <link rel="stylesheet" href="/css/login.css" />
+    <!-- vinculación font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="hidden">
+    <header class="header-bg">
+      <!-- barra de navegación -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="linkNav" href="/index.html"><img class="logo" width="100px" /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigatin"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorias
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Computadores</a></li>
+                  <li><a class="dropdown-item" href="#">Impresoras</a></li>
+                  <li><a class="dropdown-item" href="#">Tablets</a></li>
+                  <li><a class="dropdown-item" href="#">Audio y Video</a></li>
+                  <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                  <li><a class="dropdown-item" href="#">Gamer</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/cliente/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/cliente/ofertas.html">Ofertas</a>
+              </li>
+            </ul>
+
+            <form class="d-flex mx-auto">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button class="btn" type="submit">Buscar</button>
+            </form>
+            <!-- icono login -->
+            <li class="nav-item navbar-nav icono">
+              <a class="nav-link" href="/pages/cliente/login.html">
+                <i class="fa-solid fa-user"></i>
+              </a>
+            </li>
+            <!-- icono carrito -->
+            <li class="nav-item navbar-nav icono">
+              <a class="nav-link" href="/pages/cliente/carrito.html">
+                <i class="fa-solid fa-cart-shopping car"></i>
+              </a>
+            </li>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Formulario de registro -->
+    <main class="fund">
+      <div class="containt">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <div class="signup-form">
+              <form class="bg" id="registroForm">
+                <h2 class="titulo">Formulario de Registro</h2>
+                <h4 class="mb-5 text-secondary text-center">
+                  Visión Tecnológica
+                </h4>
+                <div class="row">
+                  <div class="mb-3 col-md-6">
+                    <label>Nombre<span class="text-danger">*</span></label>
+                    <input
+                      type="text"
+                      name="nombre"
+                      id="nombre"
+                      class="form-dato"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3 col-md-6">
+                    <label>Correo<span class="text-danger">*</span></label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="form-dato"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3 col-md-6">
+                    <label>Contraseña<span class="text-danger">*</span></label>
+                    <input
+                      type="password"
+                      name="clave"
+                      id="clave"
+                      class="form-dato"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3 col-md-6">
+                    <label>Teléfono<span class="text-danger">*</span></label>
+                    <input
+                      type="tel"
+                      name="telefono"
+                      id="telefono"
+                      class="form-dato"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3 col-md-6">
+                    <label>Documento<span class="text-danger">*</span></label>
+                    <input
+                      type="text"
+                      name="documento"
+                      id="documento"
+                      class="form-dato"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3 col-md-6">
+                    <label>Dirección<span class="text-danger">*</span></label>
+                    <input
+                      type="text"
+                      name="direccion"
+                      id="direccion"
+                      class="form-dato"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3 col-md-6">
+                    <label
+                      >Departamento<span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="text"
+                      name="departamento"
+                      id="departamento"
+                      class="form-dato"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3 col-md-6">
+                    <label>Ciudad<span class="text-danger">*</span></label>
+                    <input
+                      type="text"
+                      name="ciudad"
+                      id="ciudad"
+                      class="form-dato"
+                      required
+                    />
+                  </div>
+                </div>
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-color float-end btn-login"
+                  >
+                    <a class="login" href="/pages/cliente/login.html">Ingresar</a>
+                  </button>
+                  <button type="submit" class="btn btn-color float-end">
+                    Registrar
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <span class="logoText">Visión Tecnológica S.A</span>
+      <p class="contacto">Contáctanos</p>
+      <div class="redes">
+        <a href="https://wa.me/3197781185" target="_blank"
+          ><i class="fa-brands fa-whatsapp contacto"></i
+        ></a>
+        <a href="#"><i class="fa-brands fa-facebook-f contacto"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram contacto"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube contacto"></i></a>
+      </div>
+      <p class="copy">
+        &copy; 2024 Aprendices SENA. Todos los derechos reservados.
+      </p>
+    </footer>
+    <!-- vinculación js -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/registro.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

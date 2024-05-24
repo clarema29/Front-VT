@@ -1,0 +1,40 @@
+.titulo {
+    color: rgb(14, 38, 36);
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.bg {
+    background-image: url("../img/fondo.png");
+    background-size: cover;
+    color: rgb(15, 58, 55);
+    padding: 20px;
+    height: 700px;
+    border-radius: 2rem;
+}
+
+
+.btn-color {
+    background: rgb(13, 60, 136);
+    color: white;
+    margin-left: 2.5rem;
+}
+
+.btn-login {
+    background: #12765a;
+    margin-right: 10.7rem;
+}
+
+.login {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-color:hover {
+    background: rgb(95, 181, 186);
+}
+
+.containt {
+    margin: 20px;
+}

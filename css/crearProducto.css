@@ -1,0 +1,51 @@
+
+#titulo-form {
+    text-align: center;
+    color: rgb(14, 38, 36);
+    margin-top: 20px;
+}
+
+.form-create {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: url(/img/Portada-articulos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.custom-input {
+    border-radius: 5px; 
+    width: 100%; 
+    box-sizing: border-box; 
+    width: 120%;
+}
+
+.btn-create {
+    border-radius: 5px; 
+    border-style: none;
+    margin-top: 10px;
+    margin-left: 1rem;
+    align-items: center;
+    background-color: rgb(7, 56, 45);
+}
+
+.lista-productos {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.imagen-placeholder {
+    width: 20%;
+    height: 10%;
+}
+#btnSeleccionarImagen {
+    border-color: darkgrey;
+    background: white;
+    color: rgb(91, 89, 89);
+    margin-left: 14px;
+}
+

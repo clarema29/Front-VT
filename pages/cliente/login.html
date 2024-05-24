@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio de sesión</title>
+     <!--Bootstrap-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <!-- vinculación css -->
+     <link rel="stylesheet" href="/css/index.css">
+     <link rel="stylesheet" href="/css/login.css">
+        <!-- vinculación font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="hidden">
+    
+    <header class="header-bg" >
+        <!-- barra de navegación -->
+        <nav class="navbar navbar-expand-lg " >
+            <div class="container-fluid">
+              <a class="linkNav" href="/index.html"><img class="logo" width="100px" ></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigatin">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="/index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categorias
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="productos.html">Computadores</a></li>
+                        <li><a class="dropdown-item" href="productos.html">Impresoras</a></li>
+                        <li><a class="dropdown-item" href="productos.html">Tablets</a></li>
+                        <li><a class="dropdown-item" href="productos.html">Audio y Video</a></li>
+                        <li><a class="dropdown-item" href="productos.html">Accesorios</a></li>
+                        <li><a class="dropdown-item" href="productos.html">Gamer</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/cliente/productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/cliente/ofertas.html">Ofertas</a>
+                  </li>
+                </ul>
+
+                <form class="d-flex mx-auto">
+                  <input class="form-control " type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn" type="submit">Buscar</button>
+                </form>
+                <!-- icono login -->
+                <li class="nav-item navbar-nav icono" >
+                    <a class="nav-link" href="/pages/login.html">
+                        <i class="fa-solid fa-user"></i> 
+                    </a>
+                  </li>
+                  <!-- icono carrito -->
+                  <li class="nav-item navbar-nav icono"> 
+                   <a class="nav-link" href="/pages/cliente/carrito.html">
+                        <i class="fa-solid fa-cart-shopping car"></i> 
+                    </a>
+                  </li>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+    <main class="main">
+      <div>
+            <section class="contenedor-from">
+                  <form class="login">
+                    <h1>Inicio de sesión</h1>
+                    <br>
+                    <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Correo electronico</label>
+                    <input type="email" class=" form-dato campo-corto" id="exampleInputEmail1" placeholder=" Ingresar correo electronico" aria-describedby="emailHelp">
+                  </div>
+                  <br>
+                   <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-dato campo-corto " id="exampleInputPassword1" placeholder=" Ingresar contraseña">
+                  </div>
+                    <div class="remember">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked"> <span>Recordar datos</span>
+                        </label>
+                      </div>
+                      <a class="forget">Olvido la Contraseña</a>
+                    </div>
+                    <button class="botonLogin" id="loginBtn" type="submit">Enviar</button>
+                    <span class="text-center">¿No tienes cuenta? <a href="/pages/cliente/registro.html" class="register"> Registrate</a></span> 
+                  </form>
+                </div>
+            </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <span class="logoText">Visión Tecnológica S.A</span>
+        <p class="contacto">Contáctanos</p>
+        <div class="redes">
+          <a href="https://wa.me/3197781185" target="_blank"><i class="fa-brands fa-whatsapp contacto"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f contacto"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram contacto"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube contacto"></i></a>
+        </div>
+        <p class="copy">&copy; 2024 Aprendices SENA. Todos los derechos reservados.</p>
+      </footer>
+      <!-- vinculación js -->   
+      
+     
+      <script src="/js/login.js"></script>
+      <script src="/js/admin/routeRestriction.js"></script>
+      <script type="module" src="../../js/client/products.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
