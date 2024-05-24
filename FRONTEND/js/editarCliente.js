@@ -1,3 +1,4 @@
+import { config } from "../config.js";
 // Obtener el ID del producto de la URL
 const urlParams = new URLSearchParams(window.location.search);
 const clienteId = urlParams.get('id');
@@ -7,7 +8,7 @@ const idNumber = parseInt(clienteId);
 // Función para obtener los detalles del producto por su ID
 function obtenerDetallesCliente() {
     // URL del endpoint para obtener detalles del producto por su ID
-    const url = `http://localhost:8080/v1/api/clientes/${clienteId}`;
+    const url = `${config.API_URL}/clientes/${clienteId}`;
 
     console.log(typeof clienteId);
     console.log(idNumber);

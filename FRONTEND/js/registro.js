@@ -1,3 +1,5 @@
+import { config } from "../config.js";
+
 document.getElementById('registroForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Evitar el envío del formulario por defecto
 
@@ -26,7 +28,7 @@ document.getElementById('registroForm').addEventListener('submit', function(even
     };
 
     // Realizar la solicitud HTTP POST usando Axios
-    axios.post('http://localhost:8080/v1/api/clientes/create', jsonData)
+    axios.post(`${config.API_URL}/clientes/create`, jsonData)
         .then(function (response) {
             // Manejar la respuesta del servidor
             console.log(response.jsonData);

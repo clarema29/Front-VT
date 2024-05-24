@@ -1,3 +1,5 @@
+import {config} from "../config.js";
+
 document.getElementById('registroProducto').addEventListener('submit', function(event) {
     event.preventDefault(); // Evitar el envío del formulario por defecto
 
@@ -22,7 +24,7 @@ document.getElementById('registroProducto').addEventListener('submit', function(
     const enOferta = document.getElementById('enOferta').checked;
    
     // Verificar si se está creando un nuevo producto o editando uno existente
-    const url = (idNumber) ? `http://localhost:8080/v1/api/productos/update/${idNumber}` : 'http://localhost:8080/v1/api/productos/create';
+    const url = (idNumber) ? `${config.API_URL}/productos/update/${idNumber}` : `${config.API_URL}/productos/create`;
     const method = (idNumber) ? 'PUT' : 'POST';
     const modo = (idNumber) ? 'EDITAR' : 'CREAR';
 

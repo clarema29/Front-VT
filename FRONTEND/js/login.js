@@ -1,3 +1,5 @@
+import { config } from "../config.js";
+
 document.getElementById('loginBtn').addEventListener('click', function(event) {
     event.preventDefault(); // Evita el envío del formulario por defecto
     var email = document.getElementById('exampleInputEmail1').value;
@@ -11,7 +13,7 @@ document.getElementById('loginBtn').addEventListener('click', function(event) {
     
 
     // Realiza la solicitud POST al endpoint de autenticación
-    fetch('http://localhost:8080/v1/api/login', {
+    fetch(`${config.API_URL}/login`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

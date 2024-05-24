@@ -1,3 +1,5 @@
+import { config } from "../config.js";
+
 document.getElementById('registro-cliente').addEventListener('submit', function(event) {
     event.preventDefault(); // Evitar el envío del formulario por defecto
 
@@ -23,7 +25,7 @@ document.getElementById('registro-cliente').addEventListener('submit', function(
     const ciudad = document.getElementById('ciudad').value;
    
     // Verificar si se está creando un nuevo producto o editando uno existente
-    const url = (idNumber) ? `http://localhost:8080/v1/api/clientes/update/${idNumber}` : 'http://localhost:8080/v1/api/clientes/create';
+    const url = (idNumber) ? `${config.API_URL}/clientes/update/${idNumber}` : `${config.API_URL}/clientes/create`;
     const method = (idNumber) ? 'PUT' : 'POST';
     const modo = (idNumber) ? 'EDITAR' : 'CREAR';
 

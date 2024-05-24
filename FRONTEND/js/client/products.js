@@ -1,4 +1,4 @@
-import { config } from "../../config.example.js";
+import { config } from "../../config.js";
 
 const productsContainer = document.getElementById("products-container");
 
