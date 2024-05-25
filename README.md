@@ -3,7 +3,7 @@
 Este proyecto es el frontend de una tienda en línea de productos tecnológicos, desarrollado con HTML, CSS y JavaScript.
 
 ## Desarrolladores
-
+## Aprendices SENA
 - Claudia Redondo ([@clarema29](https://github.com/clarema29))
 - Angie Morales ([@angiemoralesam](https://github.com/angiemoralesam))
 - Cindy Gonzalez ([@cimagoca027](https://github.com/cimagoca027))
@@ -19,7 +19,8 @@ Este proyecto es el frontend de una tienda en línea de productos tecnológicos,
 1. Clona el repositorio del proyecto frontend: git clone https://github.com/tu-usuario/nombre-repositorio-frontend.git
 2. Abre el proyecto en Visual Studio Code.
 3. En Visual Studio Code, abre el archivo `index.html` y haz clic derecho sobre él. Luego, selecciona la opción "Open with Live Server".
-4. Esto abrirá la interfaz del cliente en tu navegador web, donde podrás visualizar y interactuar con la tienda en línea.
+4. Esto abrirá la interfaz del cliente en tu navegador web, donde podrás visualizar e interactuar con la tienda en línea.
+5. Para abrir la interfaz del administardor abrir el archivo `crearProductos.html` y clic derecho sobre "Open with Live Server".
 
 ## Funcionalidad de Administración
 
