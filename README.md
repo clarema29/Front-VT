@@ -3,7 +3,7 @@
 Este proyecto es el frontend de una tienda en línea de productos tecnológicos, desarrollado con HTML, CSS y JavaScript.
 
 ## Desarrolladores
-## Aprendices SENA
+### Aprendices SENA
 - Claudia Redondo ([@clarema29](https://github.com/clarema29))
 - Angie Morales ([@angiemoralesam](https://github.com/angiemoralesam))
 - Cindy Gonzalez ([@cimagoca027](https://github.com/cimagoca027))
